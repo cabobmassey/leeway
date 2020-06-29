@@ -1,0 +1,74 @@
+<!-- <div>
+  <ul class="collection">
+    <li class="collection-item">
+      <strong>{{myApartment.id}}: </strong> {{myApartment.address}}
+    </li>
+  </ul>
+</div>
+
+<ng-template #noApartments>
+  <hr>
+  <h5>There Are No Apartments in the List</h5>
+</ng-template> -->
+
+<!-- Page Content -->
+<div class="container">
+
+  <!-- Portfolio Item Heading -->
+  <h1 class="my-4">{{myApartment?.address}}
+  </h1>
+
+  <!-- Portfolio Item Row -->
+  <div class="row">
+
+    <div class="col-md-8">
+      <img class="img-fluid" src="{{myApartment?.imgURL}}" alt="">
+    </div>
+
+    <div class="col-md-4">
+      <h3 class="my-3">{{myApartment?.squareFeet}} sqft + {{myApartment?.bedrooms}} bedrooms +
+        {{myApartment?.bathrooms}} bathrooms</h3>
+      <p>{{myApartment?.description}}</p>
+      <h3 class="my-3">Amenities</h3>
+      <ul *ngFor="let thing of myApartment?.amenities">
+        <li>{{thing}}</li>
+      </ul>
+    </div>
+
+  </div>
+  <!-- /.row -->
+
+  <!-- Related Projects Row -->
+  <h3 class="my-4">Nearby Rooms</h3>
+
+  <div class="row">
+
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="#">
+        <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+      </a>
+    </div>
+
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="#">
+        <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+      </a>
+    </div>
+
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="#">
+        <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+      </a>
+    </div>
+
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="#">
+        <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+      </a>
+    </div>
+
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->

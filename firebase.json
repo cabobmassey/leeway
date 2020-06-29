@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/david-fays-idea",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
